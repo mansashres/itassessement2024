@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Educate With Me</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <div id="navbar"></div>
+    </header>
+
+    <!-- About Us Section -->
+    <main class="about-main">
+      <section class="intro-section">
+        <center><h1>About Us</h1></center>
+        <p>
+          Educate With Me is dedicated to making education accessible and
+          engaging for all. Our mission is to provide high-quality learning
+          experiences for students worldwide.
+        </p>
+      </section>
+
+      <section class="courses-section">
+        <h2>Popular IT Courses We Offer</h2>
+        <ul>
+          <li>
+            <strong>Web Development:</strong> HTML, CSS, JavaScript, React, and
+            more.
+          </li>
+          <li>
+            <strong>Backend Development:</strong> Node.js, Express, MongoDB,
+            SQL.
+          </li>
+          <li>
+            <strong>Python Programming:</strong> For web, data science, and
+            automation.
+          </li>
+          <li>
+            <strong>Cybersecurity:</strong> Learn the basics of ethical hacking
+            and system protection.
+          </li>
+          <li>
+            <strong>UI/UX Design:</strong> Build intuitive, beautiful digital
+            experiences.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- <footer>
+      <div class="footer-title">
+        Educate <span class="footerzed">WithMe</span>
+      </div>
+
+      <div class="footer-columns">
+        <div class="aims">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html" class="footer-link">Our Story</a></li>
+            <li><a href="team.html" class="footer-link">Our Team</a></li>
+            <li><a href="careers.html" class="footer-link">Careers</a></li>
+          </ul>
+        </div>
+        <div class="aims">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="faq.html" class="footer-link">FAQs</a></li>
+            <li>
+              <a href="contact.html" class="footer-link">Contact Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="aims">
+          <h3>Follow Us</h3>
+          <div class="social-logo">
+            <a href="#" class="fa">Facebook</a>
+            <a href="#" class="fa">Twitter</a>
+            <a href="#" class="fa">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="terms.html" class="footer-link">Terms & Conditions</a>
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+      </div>
+
+      <center><p>&copy; 2025 Educate With Me. All rights reserved.</p></center>
+    </footer> -->
+
+    <!-- Load external nav -->
+    <script>
+      fetch("nav.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
